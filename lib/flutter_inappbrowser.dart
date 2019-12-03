@@ -706,7 +706,6 @@ class _InAppWebViewState extends State<InAppWebView> {
   Widget build(BuildContext context) {
     if (defaultTargetPlatform == TargetPlatform.android) {
       return GestureDetector(
-        onLongPress: () {},
         excludeFromSemantics: true,
         child: AndroidView(
           viewType: 'com.pichillilorenzo/flutter_inappwebview',
